@@ -1,0 +1,37 @@
+<html> 
+<body>
+<script type="text/javascript">
+function show_pic(){
+//alert('hi');
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+c1_elem.style.display='none';
+c2_elem.style.display='block';
+}
+function show_text(){
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+c1_elem.style.display='block';
+c2_elem.style.display='none';
+}
+
+</script>
+<table border="10">
+<tr>
+<td width="50%" onclick= "show_text()"> Info  </td>
+<td width="50%"  onclick= "show_pic()"> Map  </td>
+</tr>
+<tr>
+<td colspan="2"> 
+<div id="c1">
+Италия - государство в Южной Европе
+</div>
+<div id="c2">
+<img SRC = "Карта-Италии1.jpg">
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
+
