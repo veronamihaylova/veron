@@ -1,0 +1,86 @@
+<html>
+<style>
+    body
+    {
+        background: rgb(9,106,176) url("Panorama.jpg") no-repeat center top;
+    }
+    td 
+    {S
+        background:white;
+    }
+    table.layot 
+    {
+        width:100%;
+        text-align: center;
+    }
+    td.menu:hover
+    {
+    background:rgb(143,166,177)
+    }
+</style>
+
+<script type="text/javascript">
+    window.onload = function () {
+        var map = new YMaps.Map(document.getElementById("CountryMap"));
+        map.setCenter(new YMaps.GeoPoint(12.605448, 42.654708), 5, YMaps.MapType.MAP);
+        map.addControl(new YMaps.Zoom());
+        map.addControl(new YMaps.ToolBar());
+        map.addControl(new YMaps.TypeControl());
+    }
+</script>
+
+<script type="text/javascript">
+    function show_pic() {
+        //alert('hi');
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'block';
+        c3_elem.style.display = 'none';
+    }
+
+function show_text() {
+    var c1_elem = document.getElementById("c1");
+    var c2_elem = document.getElementById("c2");
+    var c3_elem = document.getElementById("c3");
+    c1_elem.style.display = 'block';
+    c2_elem.style.display = 'none';
+    c3_elem.style.display = 'none';
+}
+
+function show_game() {
+    var c1_elem = document.getElementById("c1");
+    var c2_elem = document.getElementById("c2");
+    var c3_elem = document.getElementById("c3");
+    c1_elem.style.display = 'none';
+    c2_elem.style.display = 'none';
+    c3_elem.style.display = 'block';
+}
+</script>
+
+<body>
+<table class= layot  border="10">
+<tr>
+<td class="menu" width="33%" onclick= "show_text()"> ГЛАВНАЯ  </td>
+<td class="menu" width="33%"  onclick= "show_pic()"> КАРТА   </td>
+<td class="menu"  width="33%" onclick= "show_game()"> ВИКТОРИНА  </td>
+</tr>
+<tr>
+<td colspan="3"> 
+<div id="c1"> Итальянская республика - государство на юге Европы. Граничит с Францией, Швейцарией, Австрией и Словенией.
+
+Горы Доломита, которые пересекают северную Италию - часть горной цепи Альп. Аппенины проходят через центр Италии, простираясь с севера на юг и разделяя восточные и западные побережья.
+
+В составе Италии есть также две независимые страны. Ватикан - центр римско-католической церкви, и наименьшая страна в мире - Сан-Марино, которая находится на северном побережье Италии и является независимой республикой.
+</div>
+<div id="c2">
+<img src = "Italymap.jpg">
+</div>
+<div id="c3"> Здесь будет игра
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
