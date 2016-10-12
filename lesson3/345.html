@@ -1,77 +1,16 @@
 <html>
-<style>
-    body
-    {
-        background: rgb(9,106,176) url("Lesson2.jpg") no-repeat center top;
-    }
-    td 
-    {S
-        background:white;
-    }
-    table.layot 
-    {
-        width:100%;
-        text-align: center;
-    }
-    td.menu:hover
-    {
-    background:rgb(143,166,177)
-    }
-    div.eee
-    {
-        background:black;
-        color:Yellow;
-        font-family:@Malgun Gothic;
-    }
-</style>
-
-
-<script type="text/javascript">
-    window.onload = function () {
-        var map = new YMaps.Map(document.getElementById("CountryMap"));
-        map.setCenter(new YMaps.GeoPoint(12.605448, 42.654708), 5, YMaps.MapType.MAP);
-        map.addControl(new YMaps.Zoom());
-        map.addControl(new YMaps.ToolBar());
-        map.addControl(new YMaps.TypeControl());
-    }
-</script>
-
-<script type="text/javascript">
-    function show_pic() {
-        //alert('hi');
-        var c1_elem = document.getElementById("c1");
-        var c2_elem = document.getElementById("c2");
-        var c3_elem = document.getElementById("c3");
-        c1_elem.style.display = 'none';
-        c2_elem.style.display = 'block';
-        c3_elem.style.display = 'none';
-    }
-
-function show_text() {
-    var c1_elem = document.getElementById("c1");
-    var c2_elem = document.getElementById("c2");
-    var c3_elem = document.getElementById("c3");
-    c1_elem.style.display = 'block';
-    c2_elem.style.display = 'none';
-    c3_elem.style.display = 'none';
-}
-
-function show_game() {
-    var c1_elem = document.getElementById("c1");
-    var c2_elem = document.getElementById("c2");
-    var c3_elem = document.getElementById("c3");
-    c1_elem.style.display = 'none';
-    c2_elem.style.display = 'none';
-    c3_elem.style.display = 'block';
-}
-function check() {
-    q1elem = document.getElementById("q1");
-    if (q1elem.checked) {
-        alert("да")} 
-        else {alert("нет")}
-    } 
-</script>
-
+<head>
+<title> Подключение CSS к HTML </title>
+<link rel="stylesheet" "type="text/css" href="StyleSheet1.css" /> 
+    <script src="Jscript1.js" type="text/javascript">
+    </script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
+    
+     <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+</head>
 
 <body>
 <table class= layot  border="10">
@@ -82,11 +21,12 @@ function check() {
 </tr>
 <tr>
 <td colspan="3"> 
-<div class="eee" id="c1"> iTALY<br />
- ITALY<br />
-ITALY.<br />
- ITALY<br />
-ITALY<br />
+<div class="eee" id="c1"> 
+ Italy rental properties are primarily found in the major metropolitan areas of Italy. Common rental types found in Italy are apartments, studios, lofts, one bedrooms, two bedrooms, condos, houses for rent, mobile homes, hotel rooms, vacation rental, furnished rentals short term rentals. Regions and cities if Italy where housing rentals are found are Abruzzo, Aosta Valley, Apulia, Basilicata , Calabria, Campania, Emilia-Romagna, Friuli-Venezia, Lazio (Roma), Liguria, Lombardy (Milan), Marche, Molise, Piedmont, Sardinia, Sicily, Trentino-Alto Adige, Tuscany, Umbria, Veneto.   Vacation rentals, short term rentals and furnished housing are more common in the metropolitan areas of Italy.
+
+Italy Rental Areas
+Use the rental links below to find Italy apartment rentals, Italy houses for rent, Italy short term furnished Italy vacation rentals and more. Landlords post rentals directly. Tenants contact landlords about the houses and apartments and negotiate such rental aspects as rent, lease term, pet policy...
+
 
 </div>
 <div id="c2">

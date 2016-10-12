@@ -1,0 +1,24 @@
+﻿    body
+    {
+        background: rgb(9,106,176) url("Lesson2.jpg") no-repeat center top;
+    }
+    td 
+    {
+        background:white;
+    }
+    table.layot 
+    {
+        width:100%;
+        text-align: center;
+    }
+    td.menu:hover
+    {
+    background:rgb(143,166,177)
+    }
+    div.eeeS
+    {
+        background:grey;
+        color:black;
+        font-family:@arial;
+    }
+
