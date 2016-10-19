@@ -1,0 +1,64 @@
+<html>
+<style> 
+td.menu {
+    background:yellow;
+}
+td.menu:hover {
+    background:blue;
+}
+      </style>
+     
+<script type="text/javascript">
+    function show_pic() {
+        //alert('hi');
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'block';
+        c3_elem.style.display = 'none';
+    }
+
+function show_text() {
+    var c1_elem = document.getElementById("c1");
+    var c2_elem = document.getElementById("c2");
+    var c3_elem = document.getElementById("c3");
+    c1_elem.style.display = 'block';
+    c2_elem.style.display = 'none';
+    c3_elem.style.display = 'none';
+}
+
+function show_game() {
+    var c1_elem = document.getElementById("c1");
+    var c2_elem = document.getElementById("c2");
+    var c3_elem = document.getElementById("c3");
+    c1_elem.style.display = 'none';
+    c2_elem.style.display = 'none';
+    c3_elem.style.display = 'block';
+}
+</script>
+
+<body>
+<table width="100%" border="10">
+<tr>
+<td class="menu" width="33%" onclick= "show_text()"> ГЛАВНАЯ  </td>
+<td class="menu" width="33%"  onclick= "show_pic()"> КАРТА   </td>
+<td class="menu"  width="33%" onclick= "show_game()"> ВИКТОРИНА  </td>
+</tr>
+<tr>
+<td colspan="3"> 
+<div id="c1">
+Италия - государство в Южной Европе
+</div>
+<div id="c2">
+<img SRC = "Карта-Италии1.jpg">
+</div>
+<div id="c3">
+Здесь будет игра
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
+

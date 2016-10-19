@@ -2,7 +2,7 @@
 <style>
     body
     {
-        background: rgb(9,106,176) url("Panorama.jpg") no-repeat center top;
+        background: rgb(9,106,176) url("Lesson2.jpg") no-repeat center top;
     }
     td 
     {S
@@ -17,7 +17,14 @@
     {
     background:rgb(143,166,177)
     }
+    div.eee
+    {
+        background:black;
+        color:Yellow;
+        font-family:@Malgun Gothic;
+    }
 </style>
+
 
 <script type="text/javascript">
     window.onload = function () {
@@ -57,7 +64,14 @@ function show_game() {
     c2_elem.style.display = 'none';
     c3_elem.style.display = 'block';
 }
+function check() {
+    q1elem = document.getElementById("q1");
+    if (q1elem.checked) {
+        alert("да")} 
+        else {alert("нет")}
+    } 
 </script>
+
 
 <body>
 <table class= layot  border="10">
@@ -68,16 +82,54 @@ function show_game() {
 </tr>
 <tr>
 <td colspan="3"> 
-<div id="c1"> Итальянская республика - государство на юге Европы. Граничит с Францией, Швейцарией, Австрией и Словенией.
+<div class="eee" id="c1"> iTALY<br />
+ ITALY<br />
+ITALY.<br />
+ ITALY<br />
+ITALY<br />
 
-Горы Доломита, которые пересекают северную Италию - часть горной цепи Альп. Аппенины проходят через центр Италии, простираясь с севера на юг и разделяя восточные и западные побережья.
-
-В составе Италии есть также две независимые страны. Ватикан - центр римско-католической церкви, и наименьшая страна в мире - Сан-Марино, которая находится на северном побережье Италии и является независимой республикой.
 </div>
 <div id="c2">
-<img src = "Italymap.jpg">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4252803.714953198!2d10.857931860093084!3d42.60399326178378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d4fe82448dd203%3A0xe22cf55c24635e6f!2z0JjRgtCw0LvQuNGP!5e0!3m2!1sru!2sru!4v1475648160855" width="2000" height="950" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
-<div id="c3"> Здесь будет игра
+
+
+<div id="c3"> 
+<div class="quest">
+Италия граничит с: <br />
+<div />
+<input id="q1" type="checkbox" />
+<label for="q1">
+ Грецией,Сербией<br />
+</label>
+<input id="q2" type="checkbox" />
+<label for="q2">
+Словенией,Германией<br />
+</label>
+<input id="q3" type="checkbox" />
+<label for="q3">
+ Францией,Швейцарией<br />
+</label>
+
+Италия это <br />
+<input type="radio" name="Вопрос 2" />3 <br />
+<input type="radio" name="Вопрос 2" />4 <br />
+<input type="radio" name="Вопрос 2" />5 <br />
+<input type="radio" name="Вопрос 2" />6 <br />
+
+Ваш отзыв о сайте <input type="text" /> <br />
+
+Италия это:  <br />
+<input type="radio" name="Вопрос 2" />3 <br />
+<input type="radio" name="Вопрос 2" />4 <br />
+<input type="radio" name="Вопрос 2" />5 <br />
+<input type="radio" name="Вопрос 2" />6 <br />
+
+
+Ваш отзыв о сайте <input type="text" /> <br />
+
+<input type="button" value= "Итог" onclick="check()">
+<input type="text" id="q1"  q1elem=document.
 </div>
 </td>
 </tr>
